@@ -1,0 +1,84 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* typography */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 43px;
+}
+span,
+button, 
+a{ 
+    font-size: 20px; 
+}
+/* common */
+a{
+    text-decoration: none;
+}
+button{
+    padding-bottom: 5px;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    align-self: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 100vh;
+    
+}
+main{
+    height: 100%;
+    background-color: rgb(0, 255, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header, 
+footer{
+    padding: 25px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BOARD STYLE */
+.board{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1.5px solid black;
+    padding: 5px;
+}
+.blue{
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+.bomb{
+    background-color: rgb(192, 25, 25);
+    color: white;
+}
+/* BOARD LOGIC */
+/* .active{
+    display: block;
+} */
+/* .non-active{
+    display: none;
+} */
